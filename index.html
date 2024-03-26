@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Maker</title>
+        <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="./css/css.css">
+        <!-- Link to external JavaScript file with defer attribute for asynchronous loading -->
+    <script src="./js/js.js" defer></script>
+        <!-- Link to Google Fonts for Merriweather font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Title -->
+        <h1>Pizza Maker</h1>
+        <!-- Pizza Maker Form -->
+        <form id="pizzaMakerForm">
+           
+            <!-- Size Selection -->
+            <fieldset>
+                <legend>Size:</legend>
+                <select id="size" name="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select><br><br>
+            </fieldset>
+            
+
+            <!-- Crust Selection -->
+            <fieldset>
+                <legend>Crust:</legend>
+                <input type="radio" id="thin" name="crust" value="Pan Crust">
+                <label for="thin">Pan Crust</label><br>
+                <input type="radio" id="thick" name="crust" value="Thin 'N Crispy Crust">
+                <label for="thick">Thin 'N Crispy Crust</label><br>
+                <input type="radio" id="handmadePanPizza" name="crust" value="Hand-Tossed Crust">
+                <label for="handmadePanPizza">Hand-Tossed Crust</label><br><br>
+            </fieldset>
+            
+            <!-- Cheese Selection -->
+            <fieldset>
+                <legend>Cheese:</legend>
+                <select id="cheese" name="cheese">
+                    <option value="mozzarella">Mozzarella</option>
+                    <option value="cheddar">Cheddar</option>
+                    <option value="parmesan">Parmesan</option>
+                    <option value="feta">Feta</option>
+                    <option value="ricotta">Ricotta</option>
+                    <option value="provolone">Provolone</option>
+                </select><br><br>
+            </fieldset>
+
+            <!-- Toppings Selection -->
+            <fieldset>
+
+                <legend>Toppings:</legend><br>
+                <!-- Meat Toppings -->
+                <div>
+                    <h4>Meat Toppings:</h4>
+                    <input type="checkbox" id="pepperoni" name="meat_topping" value="pepperoni">
+                    <label for="pepperoni">Pepperoni</label><br>
+                    <input type="checkbox" id="italianSausage" name="meat_topping" value="italian sausage">
+                    <label for="italianSausage">Italian Sausage</label><br>
+                    <input type="checkbox" id="ham" name="meat_topping" value="ham">
+                    <label for="ham">Ham</label><br>
+                    <input type="checkbox" id="bacon" name="meat_topping" value="bacon">
+                    <label for="bacon">Bacon</label><br>
+                    <input type="checkbox" id="beef" name="meat_topping" value="beef">
+                    <label for="beef">Beef</label><br>
+                    <input type="checkbox" id="grilledChicken" name="meat_topping" value="grilled chicken">
+                    <label for="grilledChicken">Grilled Chicken</label><br>
+                    <input type="checkbox" id="meatballs" name="meat_topping" value="meatballs">
+                    <label for="meatballs">Meatballs</label><br>
+                    <input type="checkbox" id="salami" name="meat_topping" value="salami">
+                    <label for="salami">Salami</label><br>
+                    <input type="checkbox" id="bbqChicken" name="meat_topping" value="bbq chicken">
+                    <label for="bbqChicken">BBQ Chicken</label><br>
+                    <input type="checkbox" id="steakStrips" name="meat_topping" value="steak strips">
+                    <label for="steakStrips">Steak Strips</label><br></div>              <br>
+                <!-- Veggie Toppings -->
+                <div>
+                    <h4>Veggie Toppings:</h4>
+                    <input type="checkbox" id="mushrooms" name="veggie_topping" value="mushrooms">
+                    <label for="mushrooms">Mushrooms</label><br>
+                    <input type="checkbox" id="greenPeppers" name="veggie_topping" value="green peppers">
+                    <label for="greenPeppers">Green Peppers</label><br>
+                    <input type="checkbox" id="onions" name="veggie_topping" value="onions">
+                    <label for="onions">Onions</label><br>
+                    <input type="checkbox" id="blackOlives" name="veggie_topping" value="black olives">
+                    <label for="blackOlives">Black Olives</label><br>
+                    <input type="checkbox" id="tomatoes" name="veggie_topping" value="tomatoes">
+                    <label for="tomatoes">Tomatoes</label><br>
+                    <input type="checkbox" id="pineapple" name="veggie_topping" value="pineapple">
+                    <label for="pineapple">Pineapple</label><br>
+                    <input type="checkbox" id="jalapenos" name="veggie_topping" value="jalapenos">
+                    <label for="jalapenos">Jalapenos</label><br>
+                    <input type="checkbox" id="spinach" name="veggie_topping" value="spinach">
+                    <label for="spinach">Spinach</label><br>
+                    <input type="checkbox" id="bananaPeppers" name="veggie_topping" value="banana peppers">
+                    <label for="bananaPeppers">Banana Peppers</label><br>
+                    <input type="checkbox" id="redOnions" name="veggie_topping" value="red onions">
+                    <label for="redOnions">Red Onions</label><br>
+                    <input type="checkbox" id="roastedRedPeppers" name="veggie_topping" value="roasted red peppers">
+                    <label for="roastedRedPeppers">Roasted Red Peppers</label><br>
+                </div>                
+                <br>
+                <!-- Specialty Toppings -->
+                <div>
+                    <h4>Specialty Toppings:</h4>
+                    <input type="checkbox" id="anchovies" name="specialty_topping" value="anchovies">
+                    <label for="anchovies">Anchovies</label><br>
+                    <input type="checkbox" id="artichokeHearts" name="specialty_topping" value="artichoke hearts">
+                    <label for="artichokeHearts">Artichoke Hearts</label><br>
+                    <input type="checkbox" id="sunDriedTomatoes" name="specialty_topping" value="sun-dried tomatoes">
+                    <label for="sunDriedTomatoes">Sun-Dried Tomatoes</label><br>
+                    <input type="checkbox" id="shrimp" name="specialty_topping" value="shrimp">
+                    <label for="shrimp">Shrimp</label><br>
+                    <input type="checkbox" id="eggplant" name="specialty_topping" value="eggplant">
+                    <label for="eggplant">Eggplant</label><br>
+                    <input type="checkbox" id="gorgonzolaCheese" name="specialty_topping" value="gorgonzola cheese">
+                    <label for="gorgonzolaCheese">Gorgonzola Cheese</label><br>
+                    <input type="checkbox" id="buffaloSauce" name="specialty_topping" value="buffalo sauce">
+                    <label for="buffaloSauce">Buffalo Sauce</label><br><br>                </div>
+
+                </fieldset>
+
+            <!-- Appetizers -->
+            <fieldset>
+
+                <legend>Appetizers:</legend>
+                <div>
+                    <input type="checkbox" id="breadsticks" name="appetizer" value="Breadsticks">
+                    <label for="breadsticks">Breadsticks</label><br>
+                    <input type="checkbox" id="garlicKnots" name="appetizer" value="Garlic Knots">
+                    <label for="garlicKnots">Garlic Knots</label><br>
+                    <input type="checkbox" id="stuffedGarlicKnots" name="appetizer" value="Stuffed Garlic Knots">
+                    <label for="stuffedGarlicKnots">Stuffed Garlic Knots</label><br>
+                    <input type="checkbox" id="buffaloWings" name="appetizer" value="Buffalo Wings">
+                    <label for="buffaloWings">Buffalo Wings</label><br>
+                    <input type="checkbox" id="chickenTenders" name="appetizer" value="Chicken Tenders">
+                    <label for="chickenTenders">Chicken Tenders</label><br>
+                    <input type="checkbox" id="mozzarellaSticks" name="appetizer" value="Mozzarella Sticks">
+                    <label for="mozzarellaSticks">Mozzarella Sticks</label><br><br>
+                </div>
+            </fieldset>
+
+
+            <!-- Pasta -->
+            <fieldset>
+
+                <legend>Pasta:</legend>
+                <div>
+                    <input type="checkbox" id="meatyMarinaraPasta" name="pasta" value="Meaty Marinara Pasta">
+                    <label for="meatyMarinaraPasta">Meaty Marinara Pasta</label><br>
+                    <input type="checkbox" id="creamyChickenAlfredoPasta" name="pasta" value="Creamy Chicken Alfredo Pasta">
+                    <label for="creamyChickenAlfredoPasta">Creamy Chicken Alfredo Pasta</label><br>
+                    <input type="checkbox" id="tuscaniChickenAlfredoPasta" name="pasta" value="Tuscani Chicken Alfredo Pasta">
+                    <label for="tuscaniChickenAlfredoPasta">Tuscani Chicken Alfredo Pasta</label><br>
+                    <input type="checkbox" id="tuscaniMeatyMarinaraPasta" name="pasta" value="Tuscani Meaty Marinara Pasta">
+                    <label for="tuscaniMeatyMarinaraPasta">Tuscani Meaty Marinara Pasta</label><br><br>
+                </div>
+            </fieldset>
+
+            <fieldset>
+
+            <!-- Desserts -->
+                <legend>Desserts:</legend>
+                <div>
+                    <input type="checkbox" id="hersheysChocolateChipCookie" name="dessert" value="Hershey's Chocolate Chip Cookie">
+                    <label for="hersheysChocolateChipCookie">Hershey's Chocolate Chip Cookie</label><br>
+                    <input type="checkbox" id="cinnamonSticks" name="dessert" value="Cinnamon Sticks">
+                    <label for="cinnamonSticks">Cinnamon Sticks</label><br>
+                    <input type="checkbox" id="chocolateDunkers" name="dessert" value="Chocolate Dunkers">
+                    <label for="chocolateDunkers">Chocolate Dunkers</label><br><br>
+                </div>
+            </fieldset>
+
+            <!-- Drinks -->
+            <fieldset>
+
+                <legend>Drinks:</legend>
+                <div>
+                    <input type="checkbox" id="softDrinks" name="drink" value="Soft drinks (Coke, Pepsi, Sprite, etc.)">
+                    
+                    <label for="softDrinks">Soft drinks (Coke, Pepsi, Sprite, etc.)</label><br>
+                    <input type="checkbox" id="icedTea" name="drink" value="Iced Tea">
+                    <label for="icedTea">Iced Tea</label><br>
+                    <input type="checkbox" id="lemonade" name="drink" value="Lemonade">
+                    <label for="lemonade">Lemonade</label><br>
+                    <input type="checkbox" id="bottledWater" name="drink" value="Bottled Water">
+                    <label for="bottledWater">Bottled Water</label><br>
+                </div>
+            </fieldset>
+
+
+            <!-- Order Button -->
+            <button type="button" id="orderBtn">Order</button>
+        </form>
+        
+<!-- Student Info Placeholder -->
+        <p id="myInfo"></p>
+
+<!-- Pizza Description Placeholder -->
+        <div id="pizzaDescription" style="font-weight: bold;"></div>
+    </div>
+
+</body>
+</html>

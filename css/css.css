@@ -1,0 +1,120 @@
+/* Resetting default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting basic styles for the body */
+body {
+    font-family: 'Merriweather', sans-serif; /* Using Merriweather font */
+    line-height: 1.6; /* Setting line height */
+    background-color: #f8f9fa; /* Setting background color */
+    color: #333; /* Setting text color */
+}
+
+/* Container to hold the content */
+.container {
+    max-width: 800px; /* Limiting content width */
+    margin: 0 auto; /* Centering the container */
+    padding: 20px; /* Adding padding */
+}
+
+/* Styling for headings */
+h1{
+    text-align: center; /* Center aligning h1 */
+    margin-bottom: 20px; /* Adding space below h1 */
+}
+
+/* Styling for all headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #e30613; /* Setting heading color */
+}
+
+/* Styling for forms */
+form {
+    background-color: #ffffff; /* Setting form background color */
+    padding: 30px; /* Adding padding */
+    border-radius: 8px; /* Adding border radius */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+}
+
+/* Styling for labels */
+label {
+    font-weight: bold; /* Making labels bold */
+    margin-bottom: 5px; /* Adding space below labels */
+    color: #333; /* Setting label color */
+}
+select {
+    padding: 12px; /* Adding padding to increase the size */
+    font-size: 16px; /* Increasing font size for better readability */
+    font-family: 'Merriweather', sans-serif; /* Using Merriweather font */
+    font-weight: bold;
+}
+
+/* Styling for radio buttons and checkboxes */
+input[type='radio'],
+input[type='checkbox'] {
+    margin-right: 10px; /* Adding space to the right of radio buttons and checkboxes */
+}
+
+/* Styling for fieldsets */
+fieldset {
+    margin-bottom: 20px; /* Adding space below fieldsets */
+    border: 2px solid #e30613; /* Setting border for fieldsets */
+    border-radius: 8px; /* Adding border radius */
+    padding: 20px; /* Adding padding */
+}
+
+/* Styling for legend */
+legend {
+    font-weight: bold; /* Making legends bold */
+    color: #e30613; /* Setting legend color */
+}
+
+/* Styling for buttons */
+button {
+    display: block; /* Making buttons block-level */
+    width: 100%; /* Filling the entire width */
+    padding: 12px; /* Adding padding */
+    margin-top: 20px; /* Adding space above buttons */
+    background-color: #ffd32a; /* Setting button background color */
+    color: #fff; /* Setting button text color */
+    border: none; /* Removing border */
+    border-radius: 5px; /* Adding border radius */
+    cursor: pointer; /* Setting cursor to pointer */
+    transition: background-color 0.3s ease; /* Adding transition effect */
+}
+
+/* Styling for button hover state */
+button:hover {
+    background-color: #ffca00; /* Changing background color on hover */
+}
+
+/* Styling for myInfo element */
+#myInfo {
+    margin-top: 20px; /* Adding space above myInfo element */
+    color: #333; /* Setting text color */
+    background-color: #ffffff; /* Setting background color */
+    padding: 10px; /* Adding padding */
+    border-radius: 5px; /* Adding border radius */
+}
+
+/* Styling for pizzaDescription element */
+#pizzaDescription {
+    margin-top: 20px; /* Adding space above pizzaDescription element */
+    background-color: #ffffff; /* Setting background color */
+    padding: 20px; /* Adding padding */
+    border-radius: 5px; /* Adding border radius */
+    color: #333; /* Setting text color */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px; /* Adjusting padding for smaller screens */
+    }
+}
+
+/* Importing Merriweather font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
